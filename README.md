@@ -138,14 +138,14 @@ Pour lancer le frontend de l'application de prédiction de churn, suivez les ét
 
 2. **Notifications** :
 
-   - Vous pouvez télécharger un fichier CSV contenant les informations de plusieurs clients via la page des notifications `notifications.html`. L'application analysera ces données et affichera les clients à risque de churn avec des recommandations sur les mesures à prendre.On a mis un fichier 'churn-test.csv' dans le fichiers assets afin de tester cette fonctionalité.
+   - Vous pouvez télécharger un fichier CSV contenant les informations de plusieurs clients via la page des notifications `notifications.html`. L'application analysera ces données et affichera les clients à risque de churn avec des recommandations sur les mesures à prendre. Nous avons mis un fichier `churn-test.csv` dans le dossier assets afin de tester cette fonctionalité. Ce fichier sert également de template.
      ![Notifications des clients à risque](assets/notifications.JPG)
 
-   - Chaque client pour lequel la prédiction montre un risque de churn (`1` pour un client susceptible de quitter la banque) est accompagné d'une explication basée sur les attributs principaux qui influencent la prédiction er recommendation de solution basé sur ces attributs qui ont menés au Churn.
+   - Chaque client pour lequel la prédiction montre un risque de churn (`1` pour un client susceptible de quitter la banque) est accompagné d'une explication basée sur les attributs principaux qui influencent la prédiction et de recommandations de solutions basées sur ces attributs qui ont menés au Churn.
 
 ### Explication des prédictions
 
-L'application utilise la librairie **SHAP** (SHapley Additive exPlanations) pour fournir une explicabilité des modèles de machine learning. Pour chaque prédiction de churn, on identifie depusi les données d'explcabilité de SHAP identifie les trois principaux attributs qui influencent la décision, offrant ainsi aux utilisateurs des insights sur les raisons sous-jacentes de la prédiction.
+L'application utilise la librairie **SHAP** (SHapley Additive exPlanations) pour fournir une explicabilité des modèles de machine learning. Pour chaque prédiction de churn, on identifie depuis les données d'explicabilité de SHAP les trois principaux attributs qui influencent la décision, offrant ainsi aux utilisateurs des insights sur les raisons sous-jacentes de la prédiction.
 
 ### Exemple d'utilisation
 
